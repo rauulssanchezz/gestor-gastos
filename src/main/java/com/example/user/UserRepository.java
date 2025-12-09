@@ -71,8 +71,7 @@ public class UserRepository {
             throw new RuntimeException("No se pudo eliminar el usuario", ex);
         }
     }
-
-    //COmprobar si tiene contraseña y hashearla en el servicio
+    
     public int updateUser(UserUpdate user) {
         String sql = "UPDATE users set name = ?, email = ?, password = ? WHERE id = ?";
 

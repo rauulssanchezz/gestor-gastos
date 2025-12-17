@@ -1,13 +1,14 @@
-package com.example.user;
+package com.example.gestor_gastos.user;
 
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import java.util.Map;
 
-import com.example.user.models.User;
-import com.example.user.models.UserCredentials;
-import com.example.user.models.UserUpdate;
+import com.example.gestor_gastos.user.models.User;
+import com.example.gestor_gastos.user.models.UserCredentials;
+import com.example.gestor_gastos.user.models.UserUpdate;
+
+import java.util.Map;
 
 @Repository
 public class UserRepository {
@@ -36,7 +37,6 @@ public class UserRepository {
         try {
             Map<String, Object> rows = jdbc.queryForMap(sql, userCredentials.getEmail());
 
-            // Comprobar en el service si alguno de los valores del map es null
             Map<String, String> userData = new java.util.HashMap<>();
             userData.put("id", String.valueOf(rows.get("id")));
             userData.put("email", rows.get("email").toString());

@@ -1,6 +1,6 @@
-package com.example.user.models;
+package com.example.gestor_gastos.user.models;
 
-import com.example.utils.Utils;
+import com.example.gestor_gastos.utils.Utils;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

@@ -1,13 +1,13 @@
-package com.example.user;
+package com.example.gestor_gastos.user;
 
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.example.user.models.User;
-import com.example.user.models.UserCredentials;
-import com.example.user.models.UserUpdate;
-import com.example.utils.JwtUtil;
+import com.example.gestor_gastos.user.models.User;
+import com.example.gestor_gastos.user.models.UserCredentials;
+import com.example.gestor_gastos.user.models.UserUpdate;
+import com.example.gestor_gastos.utils.JwtUtil;
 
 import io.jsonwebtoken.Claims;
 

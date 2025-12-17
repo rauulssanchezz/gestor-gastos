@@ -1,4 +1,4 @@
-package com.example.user.models;
+package com.example.gestor_gastos.user.models;
 
 import jakarta.validation.constraints.NotBlank;
 

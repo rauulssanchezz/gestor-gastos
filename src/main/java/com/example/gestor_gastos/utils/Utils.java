@@ -1,4 +1,4 @@
-package com.example.utils;
+package com.example.gestor_gastos.utils;
 
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
